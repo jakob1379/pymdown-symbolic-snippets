@@ -32,6 +32,25 @@ Resolved output is rewritten to standard snippets format:
 - Positive values are 1-based (`1` is first line of symbol).
 - `0` and negatives are offsets (`0` is symbol start, `-1` is one line above).
 
+## Ecosystem comparison
+
+Research summary across `pymdown-extensions`, `mkdocs`, `mkdocs-material`, and
+common include plugins:
+
+| Tool / project | Symbol path include (`module:Class.method`) | AST/introspection-based resolution | Generic snippet include | Equivalent to this project |
+| --- | --- | --- | --- | --- |
+| [`pymdownx.snippets`](https://facelessuser.github.io/pymdown-extensions/extensions/snippets/) | No | No | Yes (file, line ranges, named marker sections) | No |
+| [`mkdocs`](https://www.mkdocs.org/user-guide/configuration/#markdown_extensions) | No | No | Not in core (delegates to extensions/plugins) | No |
+| [`mkdocs-material`](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#embedding-external-files) | No | No | Yes via upstream `pymdownx.snippets` | No |
+| [`mkdocstrings/python`](https://mkdocstrings.github.io/python/usage/configuration/general/#show_source) | Partial (API object rendering) | Yes (object collection) | No (not a general snippets include engine) | Partial |
+| [`mkdocs-codeinclude-plugin`](https://github.com/rnorth/mkdocs-codeinclude-plugin) | No | No | Yes (token/brace-targeted blocks) | No |
+| [`mkdocs-include-markdown-plugin`](https://github.com/mondeja/mkdocs-include-markdown-plugin) | No | No | Yes (delimiter-based includes) | No |
+| `zensical-code-references` (this project) | Yes | Yes | Yes (rewrites to `pymdownx.snippets` line spans) | Yes |
+
+Bottom line: existing options either slice by lines/markers or render API docs;
+none provide first-class symbol-addressed snippet transclusion in the same
+workflow as `pymdownx.snippets`.
+
 ## Zensical configuration (`zensical.toml`)
 
 ```toml
