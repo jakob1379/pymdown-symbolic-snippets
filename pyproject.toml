@@ -27,9 +27,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/jakob1379/zensical-code-references"
-Repository = "https://github.com/jakob1379/zensical-code-references"
-Issues = "https://github.com/jakob1379/zensical-code-references/issues"
+Homepage = "https://github.com/jakob1379/pymdown-symbolic-snippets"
+Repository = "https://github.com/jakob1379/pymdown-symbolic-snippets"
+Issues = "https://github.com/jakob1379/pymdown-symbolic-snippets/issues"
 Documentation = "https://zensical.org/"
 
 [project.entry-points."markdown.extensions"]
