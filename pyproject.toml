@@ -37,6 +37,7 @@ pymdown_symbolic_snippets = "pymdown_symbolic_snippets.symbolic_snippets:makeExt
 
 [dependency-groups]
 dev = [
+    "commitizen>=4.13.9",
     "pytest>=8.4.2",
     "zensical>=0.0.24",
 ]
@@ -56,3 +57,11 @@ run = "Python-Markdown preprocessor hook method invoked by framework runtime"
 _transform_single_line = "Internal preprocessor flow method invoked by run"
 _transform_block_line = "Internal preprocessor flow method invoked by run"
 _resolve_target = "Internal preprocessor flow method invoked by transform helpers"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "uv"
+update_changelog_on_bump = true
+major_version_zero = true
