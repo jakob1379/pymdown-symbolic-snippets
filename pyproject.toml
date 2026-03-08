@@ -1,6 +1,6 @@
 [project]
 name = "pymdown-symbolic-snippets"
-version = "0.1.0"
+version = "0.2.0"
 description = "Symbol-aware markdown snippet references for pymdownx.snippets"
 readme = "README.md"
 license = "MIT"
