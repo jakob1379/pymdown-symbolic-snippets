@@ -34,7 +34,6 @@ Documentation = "https://zensical.org/"
 
 [project.entry-points."markdown.extensions"]
 pymdown_symbolic_snippets = "pymdown_symbolic_snippets.symbolic_snippets:makeExtension"
-zensical_symbolic_snippets = "pymdown_symbolic_snippets.symbolic_snippets:makeExtension"
 
 [dependency-groups]
 dev = [

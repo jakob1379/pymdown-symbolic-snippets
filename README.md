@@ -2,13 +2,6 @@
 
 Extension that makes `pymdownx.snippets` symbol-aware.
 
-## Migration
-
-- Canonical package/distribution name is now `pymdown-symbolic-snippets`.
-- Canonical Python module path is now `pymdown_symbolic_snippets`.
-- Compatibility aliases remain for one release: `zensical_symbolic_snippets` extension key and `zensical_code_references` import path.
-- Importing `zensical_code_references` emits a `DeprecationWarning`.
-
 ## What this gives you
 
 Markdown usage stays standard:

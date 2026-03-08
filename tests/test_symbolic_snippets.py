@@ -3,7 +3,6 @@ from __future__ import annotations
 import subprocess
 import sys
 import textwrap
-import warnings
 from pathlib import Path
 
 import markdown
@@ -333,22 +332,3 @@ def test_zensical_build_renders_symbolic_snippets_from_this_module(tmp_path):
     assert "parse_symbolic_reference" in html
     assert "language-py highlight" in html
     assert "```" not in html
-
-
-def test_compat_import_path_emits_deprecation_warning():
-    sys.modules.pop("zensical_code_references", None)
-    with warnings.catch_warnings(record=True) as caught:
-        warnings.simplefilter("always", DeprecationWarning)
-        __import__("zensical_code_references")
-
-    assert any("deprecated" in str(warning.message) for warning in caught)
-
-
-def test_compat_module_path_emits_deprecation_warning():
-    sys.modules.pop("zensical_code_references.symbolic_snippets", None)
-    sys.modules.pop("zensical_code_references", None)
-    with warnings.catch_warnings(record=True) as caught:
-        warnings.simplefilter("always", DeprecationWarning)
-        __import__("zensical_code_references.symbolic_snippets")
-
-    assert any("deprecated" in str(warning.message) for warning in caught)
