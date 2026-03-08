@@ -1,6 +1,13 @@
-# zensical-code-references
+# pymdown-symbolic-snippets
 
-PoC extension for Zensical that makes `pymdownx.snippets` symbol-aware.
+Extension that makes `pymdownx.snippets` symbol-aware.
+
+## Migration
+
+- Canonical package/distribution name is now `pymdown-symbolic-snippets`.
+- Canonical Python module path is now `pymdown_symbolic_snippets`.
+- Compatibility aliases remain for one release: `zensical_symbolic_snippets` extension key and `zensical_code_references` import path.
+- Importing `zensical_code_references` emits a `DeprecationWarning`.
 
 ## What this gives you
 
@@ -29,13 +36,13 @@ resolution is only applied when the target matches a real Python module under
 ## Install
 
 ```bash
-uv add zensical-code-references
+uv add pymdown-symbolic-snippets
 ```
 
 Or:
 
 ```bash
-pip install zensical-code-references
+pip install pymdown-symbolic-snippets
 ```
 
 `zensical` is optional. This package works as a Python-Markdown extension without
@@ -91,7 +98,7 @@ common include plugins:
 | [`mkdocstrings/python`](https://mkdocstrings.github.io/python/usage/configuration/general/#show_source) | Partial (API object rendering) | Yes (object collection) | No (not a general snippets include engine) | Partial |
 | [`mkdocs-codeinclude-plugin`](https://github.com/rnorth/mkdocs-codeinclude-plugin) | No | No | Yes (token/brace-targeted blocks) | No |
 | [`mkdocs-include-markdown-plugin`](https://github.com/mondeja/mkdocs-include-markdown-plugin) | No | No | Yes (delimiter-based includes) | No |
-| `zensical-code-references` (this project) | Yes | Yes | Yes (rewrites to `pymdownx.snippets` line spans) | Yes |
+| `pymdown-symbolic-snippets` (this project) | Yes | Yes | Yes (rewrites to `pymdownx.snippets` line spans) | Yes |
 
 Bottom line: existing options either slice by lines/markers or render API docs;
 none provide first-class symbol-addressed snippet transclusion in the same
@@ -107,11 +114,11 @@ import markdown
 
 md = markdown.Markdown(
     extensions=[
-        "zensical_symbolic_snippets",
+        "pymdown_symbolic_snippets",
         "pymdownx.snippets",
     ],
     extension_configs={
-        "zensical_symbolic_snippets": {
+        "pymdown_symbolic_snippets": {
             "module_roots": ["src"],
             "fail_on_unresolved": True,
         },
@@ -123,10 +130,10 @@ md = markdown.Markdown(
 )
 ```
 
-## Zensical configuration (`zensical.toml`)
+## Zensical configuration (`site.toml`)
 
 ```toml
-[project.markdown_extensions.zensical_symbolic_snippets]
+[project.markdown_extensions.pymdown_symbolic_snippets]
 module_roots = ["src"]
 fail_on_unresolved = true
 
@@ -151,16 +158,16 @@ fenced blocks to render as plain text.
 This repo includes a working Zensical example that references this package's
 own source to prove behavior:
 
-- Config: `examples/zensical/zensical.toml`
-- Docs page: `examples/zensical/docs/index.md`
+- Config: `examples/symbolic-snippets/site.toml`
+- Docs page: `examples/symbolic-snippets/docs/index.md`
 
 Build it:
 
 ```bash
-uv run zensical build --config-file examples/zensical/zensical.toml
+uv run zensical build --config-file examples/symbolic-snippets/site.toml
 ```
 
-Tiny output example (from `examples/zensical/site/index.html`):
+Tiny output example (from `examples/symbolic-snippets/site/index.html`):
 
 ```py
 def parse_symbolic_reference(value: str) -> SymbolicReference | None:

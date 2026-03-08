@@ -1,7 +1,11 @@
-from importlib.metadata import version
+import warnings
 
-from .symbolic_snippets import SymbolicSnippetsExtension
+from pymdown_symbolic_snippets import SymbolicSnippetsExtension, __version__
 
-__version__ = version("zensical-code-references")
+warnings.warn(
+    "zensical_code_references is deprecated; use pymdown_symbolic_snippets instead.",
+    DeprecationWarning,
+    stacklevel=2,
+)
 
 __all__ = ["SymbolicSnippetsExtension", "__version__"]

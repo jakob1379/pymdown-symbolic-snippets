@@ -3,7 +3,7 @@ site_name = "Symbolic Snippets PoC"
 docs_dir = "docs"
 site_dir = "site"
 
-[project.markdown_extensions.zensical_symbolic_snippets]
+[project.markdown_extensions.pymdown_symbolic_snippets]
 module_roots = ["src"]
 fail_on_unresolved = true
 

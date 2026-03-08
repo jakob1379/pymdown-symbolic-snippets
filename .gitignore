@@ -14,4 +14,4 @@ wheels/
 src/.skylos_trace
 
 # Generated docs example output
-examples/zensical/site/
+examples/symbolic-snippets/site/

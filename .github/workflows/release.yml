@@ -1,10 +1,14 @@
-name: Release
+name: Test, Build, Publish
 
 on:
   push:
     tags:
       - "v*.*.*"
   workflow_dispatch:
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -29,7 +33,7 @@ jobs:
           cache-python: true
 
       - name: Install dependencies
-        run: uv sync --all-groups
+        run: uv sync --locked --all-groups
 
       - name: Run tests
         run: uv run pytest
@@ -75,7 +79,7 @@ jobs:
           fi
 
       - name: Build package
-        run: uv build
+        run: uv build --sdist --wheel
 
       - name: Upload dist artifacts
         uses: actions/upload-artifact@v7

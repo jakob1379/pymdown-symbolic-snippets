@@ -1,7 +1,7 @@
 [project]
-name = "zensical-code-references"
+name = "pymdown-symbolic-snippets"
 version = "0.1.0"
-description = "Symbol-aware snippet references for zensical and pymdownx.snippets"
+description = "Symbol-aware markdown snippet references for pymdownx.snippets"
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
@@ -9,7 +9,7 @@ authors = [
     { name = "Jakob Guldberg Aaes", email = "jakob1379@gmali.com" }
 ]
 requires-python = ">=3.13"
-keywords = ["markdown", "documentation", "snippets", "python", "zensical"]
+keywords = ["markdown", "documentation", "snippets", "python", "pymdown"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -33,7 +33,8 @@ Issues = "https://github.com/jakob1379/zensical-code-references/issues"
 Documentation = "https://zensical.org/"
 
 [project.entry-points."markdown.extensions"]
-zensical_symbolic_snippets = "zensical_code_references.symbolic_snippets:makeExtension"
+pymdown_symbolic_snippets = "pymdown_symbolic_snippets.symbolic_snippets:makeExtension"
+zensical_symbolic_snippets = "pymdown_symbolic_snippets.symbolic_snippets:makeExtension"
 
 [dependency-groups]
 dev = [

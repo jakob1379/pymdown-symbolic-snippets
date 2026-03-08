@@ -8,17 +8,17 @@ own source code by symbolic reference.
 This is standard `pymdownx.snippets` syntax and continues to work unchanged.
 
 ```py
---8<-- "zensical_code_references/symbolic_snippets.py:1:12"
+--8<-- "pymdown_symbolic_snippets/symbolic_snippets.py:1:12"
 ```
 
 ## Function from this module
 
 ```py
---8<-- "zensical_code_references.symbolic_snippets:parse_symbolic_reference"
+--8<-- "pymdown_symbolic_snippets.symbolic_snippets:parse_symbolic_reference"
 ```
 
 ## Method from this module
 
 ```py
---8<-- "zensical_code_references.symbolic_snippets:SymbolResolver.resolve"
+--8<-- "pymdown_symbolic_snippets.symbolic_snippets:SymbolResolver.resolve"
 ```
