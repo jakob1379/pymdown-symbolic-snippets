@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 452" width="960" height="452" role="img" aria-labelledby="t d">
+<title id="t">pymdown-symbolic-snippets resolving a symbol to lines</title>
+<desc id="d">A snippet reference to SymbolResolver.resolve is found in the module's syntax tree, rewritten to the line span 90:90,98:141 for pymdownx.snippets, and rendered as code. When six lines are added above the class, the span becomes 96:96,104:147 and the rendered snippet is unchanged.</desc>
+<style>
+:root{--bg:#e2ece4;--grid:#d0dfd3;--paper:#fbfcf8;--edge:#c3d3c7;--ink:#1c3329;--muted:#5d7869;--bar:#9fb5a7;--mark:#f4cf45;--mark-a:.9;--cut:#1c3329;--add:#3f7fc2;--kw:#2b6b4c}
+@media (prefers-color-scheme:dark){:root{--bg:#12302a;--grid:#1a3f36;--paper:#0c201b;--edge:#24493f;--ink:#e2eee6;--muted:#8eab9c;--bar:#47705f;--mark:#e9c53e;--mark-a:.34;--cut:#f0d25a;--add:#80b4ea;--kw:#a3dbb9}}
+.bg{fill:var(--bg)}.grid{stroke:var(--grid);stroke-width:1;fill:none}
+.paper{fill:var(--paper);stroke:var(--edge);stroke-width:1}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono","Liberation Mono",monospace}
+.sans{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+.ink{fill:var(--ink)}.muted{fill:var(--muted)}.kw{fill:var(--kw);font-weight:700}
+.bars rect{fill:var(--bar)}.ins rect{fill:var(--add)}
+.ruler line{stroke:var(--muted);stroke-width:1}.ruler text{fill:var(--muted);font-size:9px;text-anchor:end}
+.mark{fill:var(--mark);fill-opacity:var(--mark-a)}
+.cutline{fill:none;stroke:var(--cut);stroke-width:1.4;stroke-dasharray:5 4}
+.bracket{fill:none;stroke:var(--ink);stroke-width:1.2}
+.conn{fill:none;stroke:var(--muted);stroke-width:1.4;stroke-dasharray:240;stroke-dashoffset:0}
+.conn-head{fill:var(--muted)}
+.fade stop{stop-color:var(--paper)}
+.cover{fill:var(--paper);opacity:0}
+.scan{stroke:var(--kw);stroke-width:1.5;opacity:0}
+.num-b,.ins,.cap{opacity:0}
+@media (prefers-reduced-motion:no-preference){
+.stage,.sym,.scan,.hl-c,.hl-m,.cut,.co-a,.co-b,.res,.conn-g,.cover,.ins,.shift,.num-a,.num-b,.cap1,.cap2,.cap3,.cap-s{animation:14s linear infinite both}
+.sym,.hl-m,.ins,.cover{transform-box:fill-box}
+.sym{transform-origin:left;animation-name:sym}
+.hl-m,.ins{transform-origin:top}
+.cover{transform-origin:bottom;animation-name:cover}
+.stage{animation-name:stage}.scan{animation-name:scan}.hl-c{animation-name:hlc}.hl-m{animation-name:hlm}
+.cut{animation-name:cut}.co-a{animation-name:coa}.co-b{animation-name:cob}.res{animation-name:res}
+.conn-g{animation-name:conng}.conn-head{animation:14s linear infinite both head}.conn{animation:14s ease-out infinite both conn}
+.ins{animation-name:ins}.shift{animation-name:shift}.num-a{animation-name:numa}.num-b{animation-name:numb}
+.cap1{animation-name:cap1}.cap2{animation-name:cap2}.cap3{animation-name:cap3}.cap-s{animation-name:hide}
+}
+@keyframes stage{0%{opacity:0}3%,93%{opacity:1}98%,100%{opacity:0}}
+@keyframes sym{0%,3%{transform:scaleX(0)}10%,100%{transform:scaleX(1)}}
+@keyframes scan{0%,9%{opacity:0;transform:translateY(0)}10%{opacity:1;transform:translateY(0)}15%,18%{opacity:1;transform:translateY(27.2px)}23%{opacity:1;transform:translateY(54.4px)}27%,100%{opacity:0;transform:translateY(54.4px)}}
+@keyframes hlc{0%,15%{opacity:0}17%,100%{opacity:1}}
+@keyframes hlm{0%,23%{transform:scaleY(0)}31%,100%{transform:scaleY(1)}}
+@keyframes cut{0%,30%{opacity:0}34%,100%{opacity:1}}
+@keyframes coa{0%,16%{opacity:0}19%,100%{opacity:1}}
+@keyframes cob{0%,24%{opacity:0}28%,100%{opacity:1}}
+@keyframes res{0%,34%{opacity:0;transform:translateY(-6px)}39%,100%{opacity:1;transform:translateY(0)}}
+@keyframes conn{0%,38%{stroke-dashoffset:240}46%,100%{stroke-dashoffset:0}}
+@keyframes head{0%,45%{opacity:0}46%,100%{opacity:1}}
+@keyframes conng{0%,57%{opacity:1}61%,100%{opacity:0}}
+@keyframes cover{0%,44%{opacity:1;transform:scaleY(1)}54%{opacity:1;transform:scaleY(0)}55%,100%{opacity:0;transform:scaleY(0)}}
+@keyframes ins{0%,62%{opacity:0;transform:scaleY(0)}63%{opacity:1}69%,100%{opacity:1;transform:scaleY(1)}}
+@keyframes shift{0%,62%{transform:translateY(0)}69%,100%{transform:translateY(20.4px)}}
+@keyframes numa{0%,64%{opacity:1}67%,100%{opacity:0}}
+@keyframes numb{0%,65%{opacity:0}68%,100%{opacity:1}}
+@keyframes cap1{0%,3%{opacity:0}5%,27%{opacity:1}29%,100%{opacity:0}}
+@keyframes cap2{0%,31%{opacity:0}33%,58%{opacity:1}60%,100%{opacity:0}}
+@keyframes cap3{0%,62%{opacity:0}64%,100%{opacity:1}}
+@keyframes hide{0%,100%{opacity:0}}
+</style>
+<defs>
+<pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse"><path class="grid" d="M24 0H0V24"/></pattern>
+<linearGradient id="fr" x1="0" x2="1" y1="0" y2="0" class="fade"><stop offset="0" stop-opacity="0"/><stop offset="1" stop-opacity="1"/></linearGradient>
+<linearGradient id="fb" x1="0" x2="0" y1="0" y2="1" class="fade"><stop offset="0" stop-opacity="0"/><stop offset="1" stop-opacity="1"/></linearGradient>
+<clipPath id="win"><rect x="30" y="142" width="426" height="261.6"/></clipPath>
+<clipPath id="out"><rect x="489" y="125" width="446" height="278"/></clipPath>
+</defs>
+<rect class="bg" width="960" height="452"/>
+<rect fill="url(#g)" width="960" height="452"/>
+<g class="stage">
+<rect class="paper" x="24" y="20" width="912" height="86" rx="10"/>
+<text class="sans muted" x="44" y="56" font-size="12">you write</text>
+<text class="sans muted" x="44" y="88" font-size="12">snippets reads</text>
+<rect class="mark sym" x="616" y="40" width="202" height="22" rx="3"/>
+<text class="mono ink" x="150" y="56" font-size="15" textLength="675" lengthAdjust="spacingAndGlyphs"><tspan class="kw">--8&lt;--</tspan> &quot;pymdown_symbolic_snippets.symbolic_snippets:SymbolResolver.resolve&quot;</text>
+<g class="res">
+<text class="mono ink" x="150" y="88" font-size="15" textLength="495" lengthAdjust="spacingAndGlyphs"><tspan class="kw">--8&lt;--</tspan> &quot;pymdown_symbolic_snippets/symbolic_snippets.py:</text>
+<text class="mono ink num-a" x="645" y="88" font-size="15" font-weight="700" textLength="117" lengthAdjust="spacingAndGlyphs">90:90,98:141"</text>
+<text class="mono ink num-b" x="645" y="88" font-size="15" font-weight="700" textLength="126" lengthAdjust="spacingAndGlyphs">96:96,104:147"</text>
+</g>
+<rect class="paper" x="24" y="124" width="432" height="280" rx="10"/>
+<text class="mono muted" x="84" y="140" font-size="11">symbolic_snippets.py</text>
+<g class="ruler"><line x1="66" y1="149.1" x2="72" y2="149.1"/><line x1="66" y1="152.5" x2="72" y2="152.5"/><line x1="66" y1="155.9" x2="72" y2="155.9"/><line x1="60" y1="159.3" x2="72" y2="159.3"/><line x1="66" y1="162.7" x2="72" y2="162.7"/><line x1="66" y1="166.1" x2="72" y2="166.1"/><line x1="66" y1="169.5" x2="72" y2="169.5"/><line x1="66" y1="172.9" x2="72" y2="172.9"/><line x1="60" y1="176.3" x2="72" y2="176.3"/><line x1="66" y1="179.7" x2="72" y2="179.7"/><line x1="66" y1="183.1" x2="72" y2="183.1"/><line x1="66" y1="186.5" x2="72" y2="186.5"/><line x1="66" y1="189.9" x2="72" y2="189.9"/><line x1="60" y1="193.3" x2="72" y2="193.3"/><line x1="66" y1="196.7" x2="72" y2="196.7"/><line x1="66" y1="200.1" x2="72" y2="200.1"/><line x1="66" y1="203.5" x2="72" y2="203.5"/><line x1="66" y1="206.9" x2="72" y2="206.9"/><line x1="60" y1="210.3" x2="72" y2="210.3"/><line x1="66" y1="213.7" x2="72" y2="213.7"/><line x1="66" y1="217.1" x2="72" y2="217.1"/><line x1="66" y1="220.5" x2="72" y2="220.5"/><line x1="66" y1="223.9" x2="72" y2="223.9"/><line x1="60" y1="227.3" x2="72" y2="227.3"/><line x1="66" y1="230.7" x2="72" y2="230.7"/><line x1="66" y1="234.1" x2="72" y2="234.1"/><line x1="66" y1="237.5" x2="72" y2="237.5"/><line x1="66" y1="240.9" x2="72" y2="240.9"/><line x1="60" y1="244.3" x2="72" y2="244.3"/><line x1="66" y1="247.7" x2="72" y2="247.7"/><line x1="66" y1="251.1" x2="72" y2="251.1"/><line x1="66" y1="254.5" x2="72" y2="254.5"/><line x1="66" y1="257.9" x2="72" y2="257.9"/><line x1="60" y1="261.3" x2="72" y2="261.3"/><line x1="66" y1="264.7" x2="72" y2="264.7"/><line x1="66" y1="268.1" x2="72" y2="268.1"/><line x1="66" y1="271.5" x2="72" y2="271.5"/><line x1="66" y1="274.9" x2="72" y2="274.9"/><line x1="60" y1="278.3" x2="72" y2="278.3"/><line x1="66" y1="281.7" x2="72" y2="281.7"/><line x1="66" y1="285.1" x2="72" y2="285.1"/><line x1="66" y1="288.5" x2="72" y2="288.5"/><line x1="66" y1="291.9" x2="72" y2="291.9"/><line x1="60" y1="295.3" x2="72" y2="295.3"/><line x1="66" y1="298.7" x2="72" y2="298.7"/><line x1="66" y1="302.1" x2="72" y2="302.1"/><line x1="66" y1="305.5" x2="72" y2="305.5"/><line x1="66" y1="308.9" x2="72" y2="308.9"/><line x1="60" y1="312.3" x2="72" y2="312.3"/><line x1="66" y1="315.7" x2="72" y2="315.7"/><line x1="66" y1="319.1" x2="72" y2="319.1"/><line x1="66" y1="322.5" x2="72" y2="322.5"/><line x1="66" y1="325.9" x2="72" y2="325.9"/><line x1="60" y1="329.3" x2="72" y2="329.3"/><line x1="66" y1="332.7" x2="72" y2="332.7"/><line x1="66" y1="336.1" x2="72" y2="336.1"/><line x1="66" y1="339.5" x2="72" y2="339.5"/><line x1="66" y1="342.9" x2="72" y2="342.9"/><line x1="60" y1="346.3" x2="72" y2="346.3"/><line x1="66" y1="349.7" x2="72" y2="349.7"/><line x1="66" y1="353.1" x2="72" y2="353.1"/><line x1="66" y1="356.5" x2="72" y2="356.5"/><line x1="66" y1="359.9" x2="72" y2="359.9"/><line x1="60" y1="363.3" x2="72" y2="363.3"/><line x1="66" y1="366.7" x2="72" y2="366.7"/><line x1="66" y1="370.1" x2="72" y2="370.1"/><line x1="66" y1="373.5" x2="72" y2="373.5"/><line x1="66" y1="376.9" x2="72" y2="376.9"/><line x1="60" y1="380.3" x2="72" y2="380.3"/><line x1="66" y1="383.7" x2="72" y2="383.7"/><line x1="66" y1="387.1" x2="72" y2="387.1"/><line x1="66" y1="390.5" x2="72" y2="390.5"/><line x1="66" y1="393.9" x2="72" y2="393.9"/><line x1="60" y1="397.3" x2="72" y2="397.3"/><line x1="66" y1="400.7" x2="72" y2="400.7"/><text x="56" y="179.2">90</text><text x="56" y="213.2">100</text><text x="56" y="247.2">110</text><text x="56" y="281.2">120</text><text x="56" y="315.2">130</text><text x="56" y="349.2">140</text><text x="56" y="383.2">150</text></g>
+<g clip-path="url(#win)">
+<line class="scan" x1="80" x2="280" y1="149.1" y2="149.1"/>
+<g class="bars"><rect x="92.4" y="148.0" width="8.4" height="2.2" rx="1.1"/><rect x="100.8" y="151.4" width="35.7" height="2.2" rx="1.1"/><rect x="92.4" y="154.8" width="56.7" height="2.2" rx="1.1"/><rect x="100.8" y="158.2" width="56.7" height="2.2" rx="1.1"/><rect x="109.2" y="161.6" width="98.7" height="2.2" rx="1.1"/><rect x="100.8" y="165.0" width="25.2" height="2.2" rx="1.1"/></g>
+<g class="ins"><g class="bars"><rect x="84" y="171.8" width="96" height="2.2" rx="1.1"/><rect x="84" y="178.6" width="150" height="2.2" rx="1.1"/><rect x="84" y="182.0" width="120" height="2.2" rx="1.1"/><rect x="84" y="185.4" width="60" height="2.2" rx="1.1"/></g></g>
+<g class="shift">
+<rect class="mark hl-c" x="80" y="173.8" width="200" height="5" rx="2"/>
+<rect class="mark hl-m" x="80" y="201.0" width="200" height="151.2" rx="2"/>
+<g class="bars"><rect x="84.0" y="175.2" width="44.1" height="2.2" rx="1.1"/><rect x="92.4" y="178.6" width="161.7" height="2.2" rx="1.1"/><rect x="100.8" y="182.0" width="42.0" height="2.2" rx="1.1"/><rect x="109.2" y="185.4" width="153.3" height="2.2" rx="1.1"/><rect x="100.8" y="188.8" width="128.1" height="2.2" rx="1.1"/><rect x="100.8" y="192.2" width="52.5" height="2.2" rx="1.1"/><rect x="100.8" y="195.6" width="117.6" height="2.2" rx="1.1"/><rect x="92.4" y="202.4" width="144.9" height="2.2" rx="1.1"/><rect x="100.8" y="205.8" width="147.0" height="2.2" rx="1.1"/><rect x="100.8" y="209.2" width="96.6" height="2.2" rx="1.1"/><rect x="100.8" y="212.6" width="94.5" height="2.2" rx="1.1"/><rect x="109.2" y="216.0" width="92.4" height="2.2" rx="1.1"/><rect x="100.8" y="219.4" width="2.1" height="2.2" rx="1.1"/><rect x="100.8" y="222.8" width="60.9" height="2.2" rx="1.1"/><rect x="100.8" y="226.2" width="132.3" height="2.2" rx="1.1"/><rect x="100.8" y="229.6" width="96.6" height="2.2" rx="1.1"/><rect x="109.2" y="233.0" width="21.0" height="2.2" rx="1.1"/><rect x="109.2" y="236.4" width="27.3" height="2.2" rx="1.1"/><rect x="109.2" y="239.8" width="23.1" height="2.2" rx="1.1"/><rect x="109.2" y="243.2" width="23.1" height="2.2" rx="1.1"/><rect x="100.8" y="246.6" width="2.1" height="2.2" rx="1.1"/><rect x="100.8" y="253.4" width="88.2" height="2.2" rx="1.1"/><rect x="100.8" y="256.8" width="8.4" height="2.2" rx="1.1"/><rect x="109.2" y="260.2" width="60.9" height="2.2" rx="1.1"/><rect x="109.2" y="263.6" width="52.5" height="2.2" rx="1.1"/><rect x="109.2" y="267.0" width="94.5" height="2.2" rx="1.1"/><rect x="109.2" y="270.4" width="142.8" height="2.2" rx="1.1"/><rect x="100.8" y="273.8" width="4.2" height="2.2" rx="1.1"/><rect x="109.2" y="277.2" width="58.8" height="2.2" rx="1.1"/><rect x="109.2" y="280.6" width="65.1" height="2.2" rx="1.1"/><rect x="109.2" y="284.0" width="60.9" height="2.2" rx="1.1"/><rect x="117.6" y="287.4" width="37.8" height="2.2" rx="1.1"/><rect x="126.0" y="290.8" width="25.2" height="2.2" rx="1.1"/><rect x="126.0" y="294.2" width="132.3" height="2.2" rx="1.1"/><rect x="117.6" y="297.6" width="2.1" height="2.2" rx="1.1"/><rect x="109.2" y="301.0" width="126.0" height="2.2" rx="1.1"/><rect x="109.2" y="304.4" width="100.8" height="2.2" rx="1.1"/><rect x="109.2" y="307.8" width="126.0" height="2.2" rx="1.1"/><rect x="100.8" y="314.6" width="8.4" height="2.2" rx="1.1"/><rect x="109.2" y="318.0" width="130.2" height="2.2" rx="1.1"/><rect x="100.8" y="321.4" width="37.8" height="2.2" rx="1.1"/><rect x="109.2" y="324.8" width="77.7" height="2.2" rx="1.1"/><rect x="100.8" y="331.6" width="52.5" height="2.2" rx="1.1"/><rect x="109.2" y="335.0" width="54.6" height="2.2" rx="1.1"/><rect x="109.2" y="338.4" width="46.2" height="2.2" rx="1.1"/><rect x="109.2" y="341.8" width="37.8" height="2.2" rx="1.1"/><rect x="109.2" y="345.2" width="58.8" height="2.2" rx="1.1"/><rect x="100.8" y="348.6" width="2.1" height="2.2" rx="1.1"/><rect x="92.4" y="355.4" width="94.5" height="2.2" rx="1.1"/><rect x="100.8" y="358.8" width="79.8" height="2.2" rx="1.1"/><rect x="100.8" y="362.2" width="50.4" height="2.2" rx="1.1"/><rect x="109.2" y="365.6" width="117.6" height="2.2" rx="1.1"/><rect x="109.2" y="369.0" width="58.8" height="2.2" rx="1.1"/><rect x="117.6" y="372.4" width="23.1" height="2.2" rx="1.1"/><rect x="109.2" y="379.2" width="113.4" height="2.2" rx="1.1"/><rect x="109.2" y="382.6" width="65.1" height="2.2" rx="1.1"/><rect x="117.6" y="386.0" width="23.1" height="2.2" rx="1.1"/><rect x="100.8" y="392.8" width="25.2" height="2.2" rx="1.1"/><rect x="92.4" y="399.6" width="136.5" height="2.2" rx="1.1"/></g>
+<g class="cut">
+<rect class="cutline" x="77" y="171.2" width="206" height="10.2" rx="3"/>
+<rect class="cutline" x="77" y="198.4" width="206" height="156.4" rx="3"/>
+<text class="mono kw" x="276" y="365.6" font-size="11" text-anchor="end">8&lt;</text>
+</g>
+<g class="co-a">
+<path class="bracket" d="M290 176.3h14"/>
+<text class="mono muted num-a" x="312" y="180.2" font-size="11">90</text>
+<text class="mono muted num-b" x="312" y="180.2" font-size="11">96</text>
+<text class="mono ink" x="344" y="180.2" font-size="11">class header</text>
+</g>
+<g class="co-b">
+<path class="bracket" d="M290 202.4h6V350.8h-6M296 223.4h12"/>
+<text class="mono muted num-a" x="312" y="227.4" font-size="11">98–141</text>
+<text class="mono muted num-b" x="312" y="227.4" font-size="11">104–147</text>
+<text class="mono ink" x="312" y="243.4" font-size="11">resolve()</text>
+<text class="sans muted" x="312" y="259.4" font-size="11">__init__ left out</text>
+</g>
+</g>
+</g>
+<g class="conn-g">
+<path class="conn" d="M300 318.0C380 318.0 420 300 480 300"/>
+<path class="conn-head" d="M486 300l-8-4.5v9z"/>
+</g>
+<rect class="paper" x="488" y="124" width="448" height="280" rx="10"/>
+<text class="sans muted" x="508" y="146" font-size="12">Rendered code block</text>
+<g clip-path="url(#out)" class="mono ink" font-size="11.5"><text x="508" y="172" xml:space="preserve"><tspan class="kw">class</tspan> SymbolResolver:</text><text x="508" y="189" xml:space="preserve">    <tspan class="kw">def</tspan> resolve(self, reference: SymbolicReference) -&gt; ResolvedReference:</text><text x="508" y="206" xml:space="preserve">        module_root, module_file = self._resolve_module_path(reference.module)</text><text x="508" y="223" xml:space="preserve">        tree, line_count = self._load_ast(module_file)</text><text x="508" y="240" xml:space="preserve">        symbol_path = self._find_symbol_path_in_body(</text><text x="508" y="257" xml:space="preserve">            tree.body, reference.symbol_parts, reference</text><text x="508" y="274" xml:space="preserve">        )</text><text x="508" y="291" xml:space="preserve">        symbol_node = symbol_path[-1]</text><text x="508" y="308" xml:space="preserve">        symbol_start, symbol_end = self._get_symbol_bounds(symbol_node)</text><text x="508" y="325" xml:space="preserve">        start_line, end_line = self._select_line_span(</text><text x="508" y="342" xml:space="preserve">            reference,</text><text x="508" y="359" xml:space="preserve">            symbol_start,</text><text x="508" y="376" xml:space="preserve">            symbol_end,</text>
+<rect x="836" y="150" width="100" height="250" fill="url(#fr)"/>
+<rect x="489" y="330" width="446" height="72" fill="url(#fb)"/>
+<rect class="cover" x="489" y="156" width="447" height="246"/>
+</g>
+<g class="sans ink" font-size="13" text-anchor="middle">
+<text class="cap-s" x="480" y="432">SymbolResolver.resolve is found in the module's AST and rewritten to a line span at build time</text>
+<text class="cap cap1" x="480" y="432">Find SymbolResolver.resolve in the module's AST</text>
+<text class="cap cap2" x="480" y="432">Rewrite it to a line span that pymdownx.snippets already understands</text>
+<text class="cap cap3" x="480" y="432">Add six lines above the class: the span moves, the snippet stays the same</text>
+</g>
+</g>
+</svg>
